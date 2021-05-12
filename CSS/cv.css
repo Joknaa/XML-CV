@@ -1,0 +1,186 @@
+/*<editor-fold desc="Imports & Variables">*/
+@media all {
+    .page-break {
+        display: none;
+    }
+}
+@media print {
+    .page-break {
+        display: block;
+        page-break-before: always;
+    }
+
+    #hobbiesandinterests h2 {
+        padding-top: 1cm;
+    }
+
+    #references h2 {
+        padding-top: 1cm;
+    }
+}
+@page {
+    margin: 0mm;  /* this affects the margin in the printer settings */
+}
+@font-face {
+    font-family: "ArchitectsDaughter";
+    src: url("../Fonts/ArchitectsDaughter-Regular.ttf");
+}
+@font-face {
+    font-family: "PermanentMarker";
+    src: url("../Fonts/PermanentMarker-Regular.ttf");
+}
+@font-face {
+    font-family: "LatoBlack";
+    src: url("../Fonts/Lato-Black.ttf");
+}
+@font-face {
+    font-family: "LatoBold";
+    src: url("../Fonts/Lato-Bold.ttf");
+}
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../Fonts/Lato-Regular.ttf");
+}
+@font-face {
+    font-family: "LatoLight";
+    src: url("../Fonts/Lato-Light.ttf");
+}
+@font-face {
+    font-family: "LatoThin";
+    src: url("../Fonts/Lato-Thin.ttf");
+}
+:root{
+    --Background: #2a2a2e;
+    --Background-LeftColumn: #cac1be;
+    --Background-RightColumn: #6E6A6F;
+    --text-LeftColumn: #6E6A6F;
+    --text-RightColumn: #cac1be;
+    --text-Name: #d4d2d5;
+    --text-Profile: #A3948F;
+    --text-GategoryName: #333234;
+    --text-TimeScale: #29282A;
+    --text-EntryDescription: #b1b0b1;
+}
+/*</editor-fold>*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--Background);
+}
+
+.CV {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px black solid;
+    width: 1100px;
+}
+.CV:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*<editor-fold desc="Left Column">*/
+.LeftColumn {
+    float: left;
+    width: 33%;
+    padding: 20px;
+    text-align: left;
+    height: 1000px;
+    background-color: var(--Background-LeftColumn);
+    color: var(--text-LeftColumn);
+}
+#Div_MyImage img{
+    width: 100%;
+    height: 100%;
+}
+#Div_Bio {
+    text-align: justify;
+}
+#Div_Bio p {
+    margin: 10px;
+}
+/*</editor-fold>*/
+/*<editor-fold desc="Right Column">*/
+.RightColumn {
+    background-color: var(--Background-RightColumn);
+    color: var(--text-RightColumn);
+    float: left;
+    width: 67%;
+    padding: 20px;
+    text-align: left;
+}
+
+/*<editor-fold desc="Name & Profile">*/
+#Div_Me h1{
+    font-family: ArchitectsDaughter, serif;
+    line-height: 100px;
+    font-size: 90px;
+    font-weight: lighter;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: var(--text-Name);
+}
+#Div_Me h3{
+    font-family: PermanentMarker, serif;
+    line-height: 40px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-top: 0;
+    color: var(--text-Profile);
+    font-weight: lighter;
+}
+/*</editor-fold>*/
+/*<editor-fold desc="Entries">*/
+#Div_Content, #Div_Content_Left {
+    text-align: left;
+    margin-top: 20px;
+    font-family: LatoRegular, serif;
+}
+#Div_Content h2, #Div_Content_Left h2{
+    font-family: LatoBlack, serif;
+    font-size: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 10PX;
+    color: var(--text-GategoryName);
+}
+
+.Div_Entry {
+    margin: 15px 15px 15px 0;
+}
+.Label_TimeScale{
+    color: var(--text-TimeScale);
+    text-align: center;
+    float: left;
+    width: 13%;
+    margin: 0 15px 0 15px;
+}
+.H3_EntrySubject {
+    font-size: 18px;
+    color: var(--text-Name);
+}
+.Div_EntryContentDescription {
+    color: var(--text-EntryDescription);
+    margin-top: 5px;
+    margin-left: 20%;
+}
+.Div_EducationEntryContentDescription {
+    color: var(--text-Name);
+    margin-top: 5px;
+    margin-left: 20% ;
+}
+/*</editor-fold>*/
+
+
+
+#hobbiesandinterests {
+    clear: both;
+    padding-top: 10px;
+}
+/*</editor-fold>*/

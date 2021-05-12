@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE cv SYSTEM "cv.dtd">
-<?xml-stylesheet href="test.xsl" type="text/xsl" ?>
+<?xml-stylesheet href="cv.xsl" type="text/xsl" ?>
 <cv xmlns="">
    <entete>
       <nom>Laadidaoui</nom>

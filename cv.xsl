@@ -30,7 +30,7 @@
                               <xsl:call-template name="showLanguages"/>
                            </div>
                            <div>
-                              <h2>Loisir</h2>
+                              <h2>Loisirs</h2>
                               <xsl:call-template name="showHobbits"/>
                            </div>
 

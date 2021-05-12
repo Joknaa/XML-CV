@@ -68,6 +68,9 @@
     margin: 0;
     padding: 0;
 }
+a{
+    color: var(--text-Name);
+}
 body {
     background-color: var(--Background);
 }
@@ -90,30 +93,53 @@ body {
     width: 33%;
     padding: 20px;
     text-align: left;
-    height: 1000px;
     background-color: var(--Background-LeftColumn);
     color: var(--text-LeftColumn);
+    height: 1300px;
 }
 #Div_MyImage img{
     width: 100%;
     height: 100%;
 }
-#Div_Bio {
-    text-align: justify;
-}
 #Div_Bio p {
+    text-align: justify;
     margin: 10px;
+}
+#Div_Info {
+    margin: 10px 0 0 30px;
 }
 
 .H3_EntrySubject_Left {
+    margin: 5px 0 0 15px;
     font-size: 18px;
     color: var(--Background-RightColumn);
 }
 .Div_EntryContentDescription_Left {
-    color: var(--text-EntryDescription);
-    margin-top: 5px;
-    margin-left: 20%;
+    font-family: LatoLight, serif;
+    color: var(--Background-RightColumn);
+    margin: 5px 5px 10px;
+    text-align: center;
 }
+.H3_EntrySubject_Language {
+    float: left;
+    width: 14%;
+    margin: 0 0 0 15px;
+    font-size: 18px;
+    color: var(--Background-RightColumn);
+}
+.Div_EntryContentDescription_Language p{
+    font-family: LatoLight, serif;
+    color: var(--Background-RightColumn);
+    margin: 5px 5px 10px 40%;
+    text-align: left;
+}
+.Div_EntryContentDescription_Hobbits {
+    font-family: LatoLight, serif;
+    color: var(--Background-RightColumn);
+    margin: 5px 0 0 15px;
+    text-align: left;
+}
+
 /*</editor-fold>*/
 /*<editor-fold desc="Right Column">*/
 .RightColumn {
@@ -123,6 +149,7 @@ body {
     width: 67%;
     padding: 20px;
     text-align: left;
+    height: 1300px;
 }
 
 /*<editor-fold desc="Name & Profile">*/
@@ -169,16 +196,17 @@ body {
     text-align: center;
     float: left;
     width: 14%;
-    margin: 0 0px 0 15px;
+    margin: 0 0 0 15px;
 }
 .H3_EntrySubject {
+    margin-left: 20%;
     font-size: 18px;
     color: var(--text-Name);
 }
 .Div_EntryContentDescription {
     color: var(--text-EntryDescription);
     margin-top: 5px;
-    margin-left: 20%;
+    margin-left: 24%;
 }
 .Div_EducationEntryContentDescription {
     color: var(--text-Name);
@@ -186,11 +214,4 @@ body {
     margin-left: 20% ;
 }
 /*</editor-fold>*/
-
-
-
-#hobbiesandinterests {
-    clear: both;
-    padding-top: 10px;
-}
 /*</editor-fold>*/

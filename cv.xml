@@ -10,6 +10,8 @@
       <nationalite>Marocain</nationalite>
       <telephone>+212 708008065</telephone>
       <mail>MohammadLaadidaoui@gmail.com</mail>
+      <linkedin>@MohammadLaadidaoui</linkedin>
+      <github>@Oknaa</github>
       <bio>
          Je suis Ingenieur en informatique, avec l'ambition de devenir un 'Game Designer'.
          <br/>J'adore analyser les jeux tout en y jouant et comprendre ce qui fait d'un jeu un succès et ce qui ne l'est pas.
@@ -19,11 +21,11 @@
    <Formations>
       <diplome>
          <annee>2022</annee>
-         <intitule>Diplôme d'ingénieur d'état: Génie Informatique</intitule>
+         <intitule>Diplôme d'ingénieur d'état en Informatique: ENSA Tetouan</intitule>
       </diplome>
       <diplome>
          <annee>2016</annee>
-         <intitule>Baccalauréat: option scientifique</intitule>
+         <intitule>Baccalauréat option Science Math A: Lycee Mohammad El-Baqqali</intitule>
       </diplome>
    </Formations>
    <stages>
@@ -45,20 +47,30 @@
    </stages>
    <projets>
       <projet>
+         <date_projet>Janv. - Mars 2021</date_projet>
+         <titre_projet>CRÉATION D'APPLICATION: TicTacToe</titre_projet>
+         <description_projet>
+            Un simple jeux de TicTacToe (XO), réalisé avec Unity etprogrammé avec le langage de programmation C#.
+         </description_projet>
+         <lien_projet>https://github.com/Joknaa/TicTacToe</lien_projet>
+      </projet>
+      <projet>
          <date_projet>Janv. - Févr. 2021</date_projet>
-         <titre_projet>CRÉATION D'UNE APPLICATION DE GESTION DES DEMANDES</titre_projet>
+         <titre_projet>CRÉATION D'APPLICATION: GESTION DES DEMANDES</titre_projet>
          <description_projet>
             Une application destinée au personnel de l'école, pourgérer les demandes de documents
             administratifs.
          </description_projet>
+         <lien_projet>https://github.com/Joknaa/Document_Request_Manager</lien_projet>
       </projet>
       <projet>
          <date_projet>Janv. - Févr. 2021</date_projet>
-         <titre_projet>CRÉATION D'UNE APPLICATION DE BIBLIOTHÈQUE MULTIMÉDIA</titre_projet>
+         <titre_projet>CRÉATION D'APPLICATION: BIBLIOTHÈQUE MULTIMÉDIA</titre_projet>
          <description_projet>
             J'ai utilisé JAVA pour développer cette application, enrespectant les principes SOLID de la
             conceptionorientée objet et le modèle de conception MVP.
          </description_projet>
+         <lien_projet>https://github.com/Joknaa/Multimedia_Library</lien_projet>
       </projet>
       <projet>
          <date_projet>Juin - Août 2019</date_projet>
@@ -66,19 +78,21 @@
          <description_projet>
             Il s'agit d'un jeu RPG - TopDown, réalisé avec Unity etprogrammé avec le langage de programmation C#.
          </description_projet>
+         <lien_projet>https://github.com/Joknaa/Ookun-s_Adventure</lien_projet>
       </projet>
    </projets>
    <certificates>
       <certificate>
          <date_certificate>Nov. 2020</date_certificate>
          <titre_certificate>Langage de programmation JAVA - HACKERRANK</titre_certificate>
+         <lien_certificate>https://www.hackerrank.com/certificates/65cd8c841937</lien_certificate>
       </certificate>
       <certificate>
          <date_certificate>Sept. 2020</date_certificate>
          <titre_certificate>Langage de programmation C - HACKERRANK</titre_certificate>
+         <lien_certificate>https://www.hackerrank.com/certificates/9225bf6dc87e</lien_certificate>
       </certificate>
    </certificates>
-
    <competences>
       <competence>
          <titre_competence>Language de Programmation:</titre_competence>
@@ -88,9 +102,11 @@
          <titre_competence>Programmation WEB:</titre_competence>
          <description_competence>HTML - CSS - JS - PHP</description_competence>
       </competence>
+      <competence>
+         <titre_competence>Autre:</titre_competence>
+         <description_competence>Unity Game Engine - Pixel Art - MVC - SOLID - Kanban</description_competence>
+      </competence>
    </competences>
-
-
    <langues>
       <langue>
          <intitule_langue>Tamazight:</intitule_langue>
@@ -109,6 +125,8 @@
          <niveau>B2</niveau>
       </langue>
    </langues>
+
+
    <loisirs>
       <loisir>Developement des Jeux-Video</loisir>
       <loisir>l'Astrophysique</loisir>

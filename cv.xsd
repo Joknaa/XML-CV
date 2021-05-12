@@ -25,6 +25,8 @@
                <xsd:element ref="nationalite"/>
                <xsd:element ref="telephone"/>
                <xsd:element ref="mail"/>
+               <xsd:element ref="linkedin"/>
+               <xsd:element ref="github"/>
                <xsd:element ref="bio"/>
             </xsd:sequence>
          </xsd:complexType>
@@ -36,6 +38,8 @@
          <xsd:element name="nationalite" type="xsd:string"/>
          <xsd:element name="telephone" type="xsd:string"/>
          <xsd:element name="mail" type="xsd:string"/>
+         <xsd:element name="linkedin" type="xsd:string"/>
+         <xsd:element name="github" type="xsd:string"/>
          <xsd:element name="bio" type="xsd:string"/>
 
       <xsd:element name="Formations">
@@ -79,7 +83,7 @@
       <xsd:element name="projets">
          <xsd:complexType>
             <xsd:sequence>
-               <xsd:element ref="stage"/>
+               <xsd:element ref="projet"/>
             </xsd:sequence>
          </xsd:complexType>
       </xsd:element>
@@ -89,30 +93,34 @@
                   <xsd:element ref="date"/>
                   <xsd:element ref="titre"/>
                   <xsd:element ref="description"/>
+                  <xsd:element ref="lien_projet"/>
                </xsd:sequence>
             </xsd:complexType>
          </xsd:element>
             <xsd:element name="date_projet" type="xsd:string"/>
             <xsd:element name="titre_projet" type="xsd:string"/>
             <xsd:element name="description_projet" type="xsd:string"/>
+            <xsd:element name="lien_projet" type="xsd:string"/>
 
       <xsd:element name="certificates">
          <xsd:complexType>
             <xsd:sequence>
-               <xsd:element ref="diplome"/>
+               <xsd:element ref="certificate"/>
             </xsd:sequence>
          </xsd:complexType>
       </xsd:element>
          <xsd:element name="certificate">
             <xsd:complexType>
                <xsd:sequence>
-                  <xsd:element ref="annee"/>
-                  <xsd:element ref="intitule"/>
+                  <xsd:element ref="date_certificate"/>
+                  <xsd:element ref="titre_certificate"/>
+                  <xsd:element ref="lien_certificate"/>
                </xsd:sequence>
             </xsd:complexType>
          </xsd:element>
             <xsd:element name="date_certificate" type="xsd:string"/>
             <xsd:element name="titre_certificate" type="xsd:string"/>
+            <xsd:element name="lien_certificate" type="xsd:string"/>
 
       <xsd:element name="competences">
          <xsd:complexType>

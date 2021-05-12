@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE cv>
+<!DOCTYPE cv SYSTEM "cv.dtd">
 <?xml-stylesheet href="test.xsl" type="text/xsl" ?>
-<cv>
+<cv xmlns="">
    <entete>
       <nom>Laadidaoui</nom>
       <prenom>Mohammad</prenom>
@@ -13,7 +13,7 @@
       <bio>
          Je suis Ingenieur en informatique, avec l'ambition de devenir un 'Game Designer'.
          <br/>J'adore analyser les jeux tout en y jouant et comprendre ce qui fait d'un jeu un succès et ce qui ne l'est pas.
-         <br/>J'aime aussi l'observation des étoiles et l'astronomie, la culture japonaise et l'anime, les promenades nocturnes et Latte: D
+         <br/>J'aime aussi l'observation des étoiles et l'astronomie, la culture japonaise et l'anime, les promenades nocturnes et Latte.
       </bio>
    </entete>
    <Formations>
@@ -28,7 +28,7 @@
    </Formations>
    <stages>
       <stage>
-         <date>Juillet 2019</date>
+         <date>Juin - Juill. 2019</date>
          <titre>Stage d'initiation:</titre>
          <description>Développement d'un site web pour la gestion des achates</description>
       </stage>
@@ -44,42 +44,40 @@
       </stage>
    </stages>
    <projets>
-
       <projet>
-         <date>Janvier - Février 2021</date>
-         <titre>CRÉATION D'UNE APPLICATION DE GESTION DES DEMANDES</titre>
-         <description>
+         <date_projet>Janv. - Févr. 2021</date_projet>
+         <titre_projet>CRÉATION D'UNE APPLICATION DE GESTION DES DEMANDES</titre_projet>
+         <description_projet>
             Une application destinée au personnel de l'école, pourgérer les demandes de documents
             administratifs.
-         </description>
+         </description_projet>
       </projet>
       <projet>
-         <date>Janvier - Février 2021</date>
-         <titre>CRÉATION D'UNE APPLICATION DE BIBLIOTHÈQUE MULTIMÉDIA</titre>
-         <description>
+         <date_projet>Janv. - Févr. 2021</date_projet>
+         <titre_projet>CRÉATION D'UNE APPLICATION DE BIBLIOTHÈQUE MULTIMÉDIA</titre_projet>
+         <description_projet>
             J'ai utilisé JAVA pour développer cette application, enrespectant les principes SOLID de la
             conceptionorientée objet et le modèle de conception MVP.
-         </description>
+         </description_projet>
       </projet>
       <projet>
-         <date>Juin - Août 2019</date>
-         <titre>CRÉATION DU JEU : OOKUN'S ADVENTURE</titre>
-         <description>
+         <date_projet>Juin - Août 2019</date_projet>
+         <titre_projet>CRÉATION DU JEU : OOKUN'S ADVENTURE</titre_projet>
+         <description_projet>
             Il s'agit d'un jeu RPG - TopDown, réalisé avec Unity etprogrammé avec le langage de programmation C#.
-         </description>
+         </description_projet>
       </projet>
    </projets>
    <certificates>
       <certificate>
-         <date>November 2020</date>
-         <sujet>Langage de programmation JAVA - HACKERRANK</sujet>
+         <date_certificate>Nov. 2020</date_certificate>
+         <titre_certificate>Langage de programmation JAVA - HACKERRANK</titre_certificate>
       </certificate>
       <certificate>
-         <date>September 2020</date>
-         <sujet>Langage de programmation C - HACKERRANK</sujet>
+         <date_certificate>Sept. 2020</date_certificate>
+         <titre_certificate>Langage de programmation C - HACKERRANK</titre_certificate>
       </certificate>
    </certificates>
-
 
    <competences>
       <competence>

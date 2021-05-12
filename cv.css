@@ -23,31 +23,31 @@
 }
 @font-face {
     font-family: "ArchitectsDaughter";
-    src: url("../Fonts/ArchitectsDaughter-Regular.ttf");
+    src: url("Fonts/ArchitectsDaughter-Regular.ttf");
 }
 @font-face {
     font-family: "PermanentMarker";
-    src: url("../Fonts/PermanentMarker-Regular.ttf");
+    src: url("Fonts/PermanentMarker-Regular.ttf");
 }
 @font-face {
     font-family: "LatoBlack";
-    src: url("../Fonts/Lato-Black.ttf");
+    src: url("Fonts/Lato-Black.ttf");
 }
 @font-face {
     font-family: "LatoBold";
-    src: url("../Fonts/Lato-Bold.ttf");
+    src: url("Fonts/Lato-Bold.ttf");
 }
 @font-face {
     font-family: "LatoRegular";
-    src: url("../Fonts/Lato-Regular.ttf");
+    src: url("Fonts/Lato-Regular.ttf");
 }
 @font-face {
     font-family: "LatoLight";
-    src: url("../Fonts/Lato-Light.ttf");
+    src: url("Fonts/Lato-Light.ttf");
 }
 @font-face {
     font-family: "LatoThin";
-    src: url("../Fonts/Lato-Thin.ttf");
+    src: url("Fonts/Lato-Thin.ttf");
 }
 :root{
     --Background: #2a2a2e;
@@ -104,6 +104,16 @@ body {
 #Div_Bio p {
     margin: 10px;
 }
+
+.H3_EntrySubject_Left {
+    font-size: 18px;
+    color: var(--Background-RightColumn);
+}
+.Div_EntryContentDescription_Left {
+    color: var(--text-EntryDescription);
+    margin-top: 5px;
+    margin-left: 20%;
+}
 /*</editor-fold>*/
 /*<editor-fold desc="Right Column">*/
 .RightColumn {
@@ -136,7 +146,7 @@ body {
 }
 /*</editor-fold>*/
 /*<editor-fold desc="Entries">*/
-#Div_Content, #Div_Content_Left {
+#Div_Content, #Div_Content_Left, #Div_Bio p {
     text-align: left;
     margin-top: 20px;
     font-family: LatoRegular, serif;
@@ -158,8 +168,8 @@ body {
     color: var(--text-TimeScale);
     text-align: center;
     float: left;
-    width: 13%;
-    margin: 0 15px 0 15px;
+    width: 14%;
+    margin: 0 0px 0 15px;
 }
 .H3_EntrySubject {
     font-size: 18px;

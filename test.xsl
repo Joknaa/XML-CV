@@ -6,7 +6,7 @@
    <xsl:template match="/">
       <html lang="en">
          <head>
-            <link rel="stylesheet" href="CSS/cv.css"/>
+            <link rel="stylesheet" href="cv.css"/>
             <title>Mohammad Laadidaoui - CV</title>
          </head>
          <body>
@@ -26,6 +26,10 @@
                            <div>
                               <h2>Competences</h2>
                               <xsl:call-template name="showSkills"/>
+                           </div>
+                           <div>
+                              <h2>Langues</h2>
+                              <xsl:call-template name="showLanguages"/>
                            </div>
 
 
@@ -133,16 +137,16 @@
       <xsl:for-each select="cv/projets/projet">
          <div class="Div_Entry">
             <label class="Label_TimeScale">
-               <xsl:value-of select="date"/>
+               <xsl:value-of select="date_projet"/>
             </label>
             <div class="Div_EntryContent">
                <h3 class="H3_EntrySubject">
                   <strong>
-                     <xsl:value-of select="titre"/>
+                     <xsl:value-of select="titre_projet"/>
                   </strong>
                </h3>
                <p class="Div_EntryContentDescription">
-                  <xsl:value-of select="description"/>
+                  <xsl:value-of select="description_projet"/>
                </p>
             </div>
          </div>
@@ -153,12 +157,12 @@
       <xsl:for-each select="cv/certificates/certificate">
          <div class="Div_Entry">
             <label class="Label_TimeScale">
-               <xsl:value-of select="date"/>
+               <xsl:value-of select="date_certificate"/>
             </label>
             <div class="Div_EntryContent">
                <p class="Div_EducationEntryContentDescription">
                   <strong>
-                     <xsl:copy-of select="sujet"/>
+                     <xsl:copy-of select="titre_certificate"/>
                   </strong>
                </p>
                <br/>
@@ -171,13 +175,30 @@
       <xsl:for-each select="cv/competences/competence">
          <div class="Div_Left_Entry">
             <div class="Div_EntryContent">
-               <h3 class="H3_EntrySubject">
+               <h3 class="H3_EntrySubject_Left">
                   <strong>
                      <xsl:value-of select="titre_competence"/>
                   </strong>
                </h3>
-               <p class="Div_EntryContentDescription">
+               <p class="Div_EntryContentDescription_Left">
                   <xsl:value-of select="description_competence"/>
+               </p>
+            </div>
+         </div>
+      </xsl:for-each>
+   </xsl:template>
+
+   <xsl:template name="showLanguages">
+      <xsl:for-each select="cv/langues/langue">
+         <div class="Div_Left_Entry">
+            <div class="Div_EntryContent">
+               <h3 class="H3_EntrySubject_Left">
+                  <strong>
+                     <xsl:value-of select="intitule_langue"/>
+                  </strong>
+               </h3>
+               <p class="Div_EntryContentDescription_Left">
+                  <xsl:value-of select="niveau"/>
                </p>
             </div>
          </div>

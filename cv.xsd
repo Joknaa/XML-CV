@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+   <xsd:element name="cv">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element ref="entete"/>
+            <xsd:element ref="Formations"/>
+            <xsd:element ref="stages"/>
+            <xsd:element ref="projets"/>
+            <xsd:element ref="certificates"/>
+            <xsd:element ref="competences"/>
+            <xsd:element ref="langues"/>
+            <xsd:element ref="loisirs"/>
+         </xsd:sequence>
+         <xsd:attribute name="xmlns" type="xsd:string"/>
+      </xsd:complexType>
+   </xsd:element>
+      <xsd:element name="entete">
+         <xsd:complexType>
+            <xsd:sequence>
+               <xsd:element ref="nom"/>
+               <xsd:element ref="prenom"/>
+               <xsd:element ref="profile"/>
+               <xsd:element ref="dateDeNaisssance"/>
+               <xsd:element ref="nationalite"/>
+               <xsd:element ref="telephone"/>
+               <xsd:element ref="mail"/>
+               <xsd:element ref="bio"/>
+            </xsd:sequence>
+         </xsd:complexType>
+      </xsd:element>
+         <xsd:element name="nom" type="xsd:string"/>
+         <xsd:element name="prenom" type="xsd:string"/>
+         <xsd:element name="profile" type="xsd:string"/>
+         <xsd:element name="dateDeNaisssance" type="xsd:string"/>
+         <xsd:element name="nationalite" type="xsd:string"/>
+         <xsd:element name="telephone" type="xsd:string"/>
+         <xsd:element name="mail" type="xsd:string"/>
+         <xsd:element name="bio" type="xsd:string"/>
+
+      <xsd:element name="Formations">
+         <xsd:complexType>
+            <xsd:sequence>
+               <xsd:element ref="diplome"/>
+            </xsd:sequence>
+         </xsd:complexType>
+      </xsd:element>
+         <xsd:element name="diplome">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element ref="annee"/>
+                  <xsd:element ref="intitule"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+            <xsd:element name="annee" type="xsd:string"/>
+            <xsd:element name="intitule" type="xsd:string"/>
+
+      <xsd:element name="stages">
+         <xsd:complexType>
+            <xsd:sequence>
+               <xsd:element ref="stage"/>
+            </xsd:sequence>
+         </xsd:complexType>
+      </xsd:element>
+         <xsd:element name="stage">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element ref="date"/>
+                  <xsd:element ref="titre"/>
+                  <xsd:element ref="description"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+            <xsd:element name="date" type="xsd:string"/>
+            <xsd:element name="titre" type="xsd:string"/>
+            <xsd:element name="description" type="xsd:string"/>
+
+      <xsd:element name="projets">
+         <xsd:complexType>
+            <xsd:sequence>
+               <xsd:element ref="stage"/>
+            </xsd:sequence>
+         </xsd:complexType>
+      </xsd:element>
+         <xsd:element name="projet">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element ref="date"/>
+                  <xsd:element ref="titre"/>
+                  <xsd:element ref="description"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+            <xsd:element name="date_projet" type="xsd:string"/>
+            <xsd:element name="titre_projet" type="xsd:string"/>
+            <xsd:element name="description_projet" type="xsd:string"/>
+
+      <xsd:element name="certificates">
+         <xsd:complexType>
+            <xsd:sequence>
+               <xsd:element ref="diplome"/>
+            </xsd:sequence>
+         </xsd:complexType>
+      </xsd:element>
+         <xsd:element name="certificate">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element ref="annee"/>
+                  <xsd:element ref="intitule"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+            <xsd:element name="date_certificate" type="xsd:string"/>
+            <xsd:element name="titre_certificate" type="xsd:string"/>
+
+      <xsd:element name="competences">
+         <xsd:complexType>
+            <xsd:sequence>
+               <xsd:element ref="competence"/>
+            </xsd:sequence>
+         </xsd:complexType>
+      </xsd:element>
+         <xsd:element name="competence">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element ref="titre_competence"/>
+                  <xsd:choice>
+                     <xsd:element ref="description_competence"/>
+                  </xsd:choice>
+               </xsd:sequence>
+            </xsd:complexType>
+      </xsd:element>
+            <xsd:element name="titre_competence" type="xsd:string"/>
+            <xsd:element name="description_competence" type="xsd:string"/>
+
+      <xsd:element name="langues">
+         <xsd:complexType>
+            <xsd:sequence>
+               <xsd:element ref="langue"/>
+            </xsd:sequence>
+         </xsd:complexType>
+      </xsd:element>
+         <xsd:element name="langue">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element ref="intitule_langue"/>
+                  <xsd:element ref="niveau"/>
+               </xsd:sequence>
+            </xsd:complexType>
+      </xsd:element>
+            <xsd:element name="intitule_langue" type="xsd:string"/>
+            <xsd:element name="niveau" type="xsd:string"/>
+
+      <xsd:element name="loisirs">
+         <xsd:complexType>
+            <xsd:sequence>
+               <xsd:element ref="loisir"/>
+            </xsd:sequence>
+         </xsd:complexType>
+      </xsd:element>
+         <xsd:element name="loisir" type="xsd:string"/>
+</xsd:schema>

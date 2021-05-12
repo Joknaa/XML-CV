@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!ELEMENT cv (entete,Formations,stages,competences,langues,loisirs)>
-<!ATTLIST  cv  code  CDATA #REQUIRED >
-<!ELEMENT entete (nom,prenom,dateDeNaisssance,nationalite,telephone,mail)>
-<!ELEMENT nom (#PCDATA)>
-<!ELEMENT prenom (#PCDATA)>
-<!ELEMENT dateDeNaisssance (#PCDATA)>
-<!ELEMENT nationalite (#PCDATA)>
-<!ELEMENT telephone (#PCDATA)>
-<!ELEMENT mail (#PCDATA)>
-<!ELEMENT Formations (diplome+)>
-<!ELEMENT diplome (annee,intitule)>
-<!ELEMENT annee (#PCDATA)>
-<!ELEMENT intitule (#PCDATA)>
-<!ELEMENT stages (stage+)>
-<!ELEMENT stage (date,titre,description)>
-<!ELEMENT date (#PCDATA)>
-<!ELEMENT titre (#PCDATA)>
-<!ELEMENT description (#PCDATA)>
-<!ELEMENT competences (competence+)>
-<!ELEMENT competence ((titre_competence)+,(description_competence)?)>
-<!ELEMENT titre_competence (#PCDATA)>
-<!ELEMENT description_competence (#PCDATA)>
-<!ELEMENT langues (langue+)>
-<!ELEMENT langue (intitule_langue, niveau)>
-<!ELEMENT intitule_langue (#PCDATA)>
-<!ELEMENT niveau (#PCDATA)>
-<!ELEMENT loisirs (loisir+)>
-<!ELEMENT loisir (#PCDATA)>
+        <!ELEMENT cv (entete,Formations,stages,competences,langues,loisirs)>
+        <!ATTLIST  cv  code  CDATA #REQUIRED >
+        <!ELEMENT entete (nom,prenom,dateDeNaisssance,nationalite,telephone,mail)>
+        <!ELEMENT nom (#PCDATA)>
+        <!ELEMENT prenom (#PCDATA)>
+        <!ELEMENT dateDeNaisssance (#PCDATA)>
+        <!ELEMENT nationalite (#PCDATA)>
+        <!ELEMENT telephone (#PCDATA)>
+        <!ELEMENT mail (#PCDATA)>
+        <!ELEMENT Formations (diplome+)>
+        <!ELEMENT diplome (annee,intitule)>
+        <!ELEMENT annee (#PCDATA)>
+        <!ELEMENT intitule (#PCDATA)>
+        <!ELEMENT stages (stage+)>
+        <!ELEMENT stage (date,titre,description)>
+        <!ELEMENT date (#PCDATA)>
+        <!ELEMENT titre (#PCDATA)>
+        <!ELEMENT description (#PCDATA)>
+        <!ELEMENT competences (competence+)>
+        <!ELEMENT competence ((titre_competence)+,(description_competence)?)>
+        <!ELEMENT titre_competence (#PCDATA)>
+        <!ELEMENT description_competence (#PCDATA)>
+        <!ELEMENT langues (langue+)>
+        <!ELEMENT langue (intitule_langue, niveau)>
+        <!ELEMENT intitule_langue (#PCDATA)>
+        <!ELEMENT niveau (#PCDATA)>
+        <!ELEMENT loisirs (loisir+)>
+        <!ELEMENT loisir (#PCDATA)>

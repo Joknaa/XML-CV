@@ -48,7 +48,7 @@
    <projets>
       <projet>
          <date_projet>Janv. - Mars 2021</date_projet>
-         <titre_projet>CRÉATION D'APPLICATION: TicTacToe</titre_projet>
+         <titre_projet>CRÉATION DU JEU: TicTacToe</titre_projet>
          <description_projet>
             Un simple jeux de TicTacToe (XO), réalisé avec Unity etprogrammé avec le langage de programmation C#.
          </description_projet>

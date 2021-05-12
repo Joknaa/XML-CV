@@ -250,7 +250,7 @@
             </label>
             <br/>
             <strong>
-               <label class="H3_EntrySubject_Left">LinkedIn:</label>
+               <label class="H3_EntrySubject_Left">Linked-In:</label>
             </strong>
             <a class="Div_EntryContentDescription_Left" href="https://www.linkedin.com/in/mohammadlaadidaoui/">
                <xsl:value-of select="cv/entete/linkedin"/>
@@ -268,50 +268,5 @@
 
          </div>
       </div>
-   </xsl:template>
-
-   <xsl:template name="showReferences">
-      <xsl:choose>
-         <xsl:when test="not(//cv/references)">
-            <p>References are available on request</p>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:for-each select="//cv/references/contact">
-               <div class="contact">
-                  <h3>
-                     <xsl:value-of select="."/>
-                  </h3>
-                  <ul>
-                     <li>
-                        <xsl:value-of select="@relationship"/>
-                     </li>
-                     <li>
-                        <xsl:value-of select="@email"/>
-                     </li>
-                     <li>
-                        <xsl:value-of select="@telephone"/>
-                     </li>
-                  </ul>
-               </div>
-            </xsl:for-each>
-         </xsl:otherwise>
-      </xsl:choose>
-   </xsl:template>
-   <!-- text: shows paragraphs where <br/> tag is used,
-       @source http://http://www.velocityreviews.com/forums/t169843-br-tag-in-xml-content.html -->
-   <xsl:template name="text" match="text()">
-      <xsl:param name="text" select="."/>
-      <xsl:choose>
-         <xsl:when test="contains($text, '&#xA;')">
-            <xsl:value-of select="substring-before($text, '&#xA;')"/>
-            <br/>
-            <xsl:call-template name="text">
-               <xsl:with-param name="text" select="substring-after($text,'&#xA;')"/>
-            </xsl:call-template>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:value-of select="$text"/>
-         </xsl:otherwise>
-      </xsl:choose>
    </xsl:template>
 </xsl:stylesheet>

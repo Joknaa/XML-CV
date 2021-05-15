@@ -7,7 +7,10 @@
       <html lang="en">
          <head>
             <link rel="stylesheet" href="cv.css"/>
-            <title>Mohammad Laadidaoui - CV</title>
+            <title>
+               <xsl:value-of select="cv/entete/prenom"/>
+               <xsl:value-of select="cv/entete/nom"/>
+            </title>
          </head>
          <body>
             <center>
